@@ -2,15 +2,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel
 from prompts import system_prompt
+from models import Claims
 
-# Define Claim models
-class Claim(BaseModel):
-    description: str
-    verifiable: bool
-    opinion: bool
-
-class Claims(BaseModel):
-    claims: list[Claim]
 
 # Load environment variables
 load_dotenv()
