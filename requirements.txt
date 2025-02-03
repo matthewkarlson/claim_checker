@@ -1,1 +1,4 @@
 youtube_transcript_api
+pydantic
+openai
+python-dotenv

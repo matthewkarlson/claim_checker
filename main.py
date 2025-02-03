@@ -11,4 +11,4 @@ text_formatted_transcript = formatter.format_transcript(transcript)
 
 # Now we can write it out to a file.
 with open('transcript.txt', 'w', encoding='utf-8') as json_file:
-    json_file.write(json_formatted)
+    json_file.write(text_formatted_transcript)
